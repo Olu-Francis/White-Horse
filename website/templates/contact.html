@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact WHT LTD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                    <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                    <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="hero-overlay">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="get-in-touch">
+                <img src="images/contact-image.png" alt="Get in Touch">
+                <div class="contact-details">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or need assistance? Our team is here to help. Contact us for information about our fire services, safety programs, or any other inquiries. Reach out via phone, email, or our online form, and we'll respond promptly to address your needs.</p>
+                    <p><strong>Contact Us:</strong><br>Fire Service Department<br>123 Firefighter Lane, Cityville, ST 12345</p>
+                    <p><strong>Phone:</strong><br>(123) 456-7890</p>
+                    <p><strong>Email:</strong><br>info@fireservice.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>Write a Message</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone-no" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Write a message" required></textarea>
+                </div>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h4>Contact Us:</h4>
+                    <p>Fire Service Department<br>123 Firefighter Lane, Cityville, ST 12345</p>
+                    <p><strong>Phone:</strong><br>(123) 456-7890</p>
+                    <p><strong>Email:</strong><br>info@fireservice.com</p>
+                </div>
+                <div class="quick-links">
+                    <h4>Quick Links:</h4>
+                    <ul>
+                        <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                        <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                        <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                        <li><a href="#">Fire Safety Tips</a></li>
+                        <li><a href="#">Emergency Resources</a></li>
+                        <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>Follow us:</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="important-info">
+                    <h4>Important Information:</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Emergency? Dial 911</p>
+                <p>&copy; 2024 WHITE HORSE TECHNOLOGIES LIMITED. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

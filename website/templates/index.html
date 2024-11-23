@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>White Horse Technologies LTD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                    <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                    <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Ensuring Your Safety with Top Notch <span>Fire</span> Solutions</h1>
+            <p>Providing Comprehensive Fire Safety Solutions, Including Installation, Maintenance, and Training, to
+                Ensure the Ultimate Protection for Your Home and Business</p>
+            <a href="/services.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-cards">
+                <div class="card">
+                    <div class="icon"><img src="images/firefighting.png" alt="Fire Fighting Systems"></div>
+                    <h3>Fire Fighting Systems</h3>
+                    <p>We offer a range of fire fighting systems including fire extinguishers for immediate response,
+                        fire hydrants for extensive water supply, and fire hose reels for efficient fire control.</p>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="images/firearlarm.png" alt="Fire Alarm"></div>
+                    <h3>Fire Alarm</h3>
+                    <p>Our fire alarm services include professional installation, regular maintenance to ensure optimal
+                        performance and safety compliance.</p>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="images/safteytraining.png" alt="Safety Training"></div>
+                    <h3>Safety Training</h3>
+                    <p>We offer comprehensive safety training programs to educate and prepare your team for fire
+                        emergencies, ensuring everyone knows how to respond effectively.</p>
+                </div>
+            </div>
+            <a href="/services.html" class="btn">See All Services</a>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>01</h3>
+                    <h4>Expertise and Experience</h4>
+                    <p>Our team consists of highly trained professionals with years of experience in fire safety,
+                        ensuring top-notch service and reliable solutions.</p>
+                </div>
+                <div class="feature">
+                    <h3>02</h3>
+                    <h4>Comprehensive Solutions</h4>
+                    <p>We offer a full range of services, including fire extinguisher installation, fire alarm systems,
+                        and safety training, to cover all your fire safety needs.</p>
+                </div>
+                <div class="feature">
+                    <h3>03</h3>
+                    <h4>24/7 Emergency Support</h4>
+                    <p>We provide round-the-clock emergency services to ensure you are protected and supported at all
+                        times, no matter the situation.</p>
+                </div>
+                <div class="feature">
+                    <h3>04</h3>
+                    <h4>Compliance and Certification</h4>
+                    <p>Our services adhere to the highest industry standards and regulations, guaranteeing that your
+                        fire safety systems are fully compliant and certified.</p>
+                </div>
+                <div class="feature">
+                    <h3>05</h3>
+                    <h4>Customized Safety Plans</h4>
+                    <p>We tailor our fire safety solutions to meet the specific needs of your home or business,
+                        providing personalized and effective protection.</p>
+                </div>
+                <div class="feature">
+                    <h3>06</h3>
+                    <h4>Customer Satisfaction</h4>
+                    <p>We prioritize your safety and satisfaction, offering exceptional customer service and ongoing
+                        support to ensure you are always prepared and protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <img src="images/john-doe.png" alt="John Doe">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h4>John Doe</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/jane-smith.png" alt="Jane Smith">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h4>Jane Smith</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h4>Contact Us:</h4>
+                    <p>Fire Service Department<br>123 Firefighter Lane, Cityville, ST 12345</p>
+                    <p><strong>Phone:</strong><br>(123) 456-7890</p>
+                    <p><strong>Email:</strong><br>info@fireservice.com</p>
+                </div>
+                <div class="quick-links">
+                    <h4>Quick Links:</h4>
+                    <ul>
+                        <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                        <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                        <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                        <li><a href="#">Fire Safety Tips</a></li>
+                        <li><a href="#">Emergency Resources</a></li>
+                        <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>Follow us:</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="important-info">
+                    <h4>Important Information:</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Emergency? Dial 911</p>
+                <p>&copy; 2024 WHITE HORSE TECHNOLOGIES LIMITED. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

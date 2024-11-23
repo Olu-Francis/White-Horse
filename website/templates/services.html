@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us WHT LTD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                    <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                    <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="hero-overlay">
+            <h1>Our Services</h1>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-overview">
+        <div class="services-cards">
+            <div class="card question">
+                <h2><span>How</span> can we <span>enhance</span> your <span>safety</span>, every step of the way?</h2>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/detector-img.png" alt="Fire Alarm"></div>
+                <h3>Fire Alarm & Detection Systems</h3>
+                <p>Addressable systems offer precise alarm location identification, enhancing response efficiency.
+                    Conventional systems provide reliable, zone-based alerts for straightforward fire detection.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/shield.png" alt="Fire Suppression"></div>
+                <h3>Fire Suppression Systems</h3>
+                <p>Our fire suppression systems include FM200 and NOVEC1230 for clean agent solutions, AUTO CO2 for
+                    quick and effective suppression, and FOAM systems for tackling flammable liquid fires.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/extinguisher.png" alt="Fire Fighting"></div>
+                <h3>Fire Fighting Systems</h3>
+                <p>We offer a range of fire fighting systems including fire extinguishers for immediate response, fire
+                    hydrants for extensive water supply, and fire hose reels for efficient fire control.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/health-box.png" alt="Outsourcings"></div>
+                <h3>Outsourcings</h3>
+                <p>We provide comprehensive outsourcing services, offering a reliable supply of personal protective
+                    equipment (PPEs) and medical equipment to ensure safety and readiness in any situation.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/spanner.png" alt="HD Plumbing"></div>
+                <h3>HD Plumbing</h3>
+                <p>Our HD Plumbing services offer advanced piping solutions, ensuring efficient and reliable water
+                    supply systems tailored for industrial and commercial applications.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/training.png" alt="Safety Training"></div>
+                <h3>Safety Training</h3>
+                <p>We offer comprehensive safety training programs to educate and prepare your team for emergencies,
+                    ensuring everyone knows how to respond effectively.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="images/health-box.png" alt="Welding Fabrications"></div>
+                <h3>Welding Fabrications</h3>
+                <p>Our welding fabrications provide custom, high-quality solutions for all your structural and repair
+                    needs, ensuring durability and precision in every project.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h4>Contact Us:</h4>
+                    <p>Fire Service Department<br>123 Firefighter Lane, Cityville, ST 12345</p>
+                    <p><strong>Phone:</strong><br>(123) 456-7890</p>
+                    <p><strong>Email:</strong><br>info@fireservice.com</p>
+                </div>
+                <div class="quick-links">
+                    <h4>Quick Links:</h4>
+                    <ul>
+                        <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                        <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                        <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                        <li><a href="#">Fire Safety Tips</a></li>
+                        <li><a href="#">Emergency Resources</a></li>
+                        <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>Follow us:</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="important-info">
+                    <h4>Important Information:</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Emergency? Dial 911</p>
+                <p>&copy; 2024 WHITE HORSE TECHNOLOGIES LIMITED. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

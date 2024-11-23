@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us WHT LTD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                    <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                    <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Hero Section -->
+    <section class="about-us-hero">
+        <div class="hero-overlay">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="about-overview">
+        <h2>Overview</h2>
+        <p>At Whitehorse Technologies Limited, we are dedicated to enhancing fire safety through innovative and reliable firefighting equipment. Our mission is to support fire service professionals in their critical roles, ensuring they have the best tools to save lives and protect property.</p>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision">
+        <div class="mission">
+            <div class="line"></div>
+            <div class="text">
+                <h3>Mission Statement</h3>
+                <p>Our mission is to enhance fire safety and protection by delivering advanced, reliable, and high-quality firefighting equipment. We are dedicated to supporting fire service professionals through exceptional products and comprehensive services, ensuring they are equipped to effectively combat fires and safeguard communities. Our commitment extends to continuous innovation, rigorous quality control, and unwavering customer support to create a safer world for everyone.</p>
+            </div>
+            <div class="image">
+                <img src="images/mission.png" alt="Mission">
+            </div>
+        </div>
+
+        <div class="vision">
+            <div class="image">
+                <img src="images/vision.png" alt="Vision">
+            </div>
+            <div class="text">
+                <h3>Vision Statement</h3>
+                <p>Our vision is to be the global leader in the fire service equipment industry, recognized for our innovation, reliability, and excellence. We aspire to set the benchmark for fire safety standards by continuously advancing our product offerings and services. Through collaboration with fire service professionals and stakeholders, we aim to drive the development of cutting-edge solutions that enhance firefighting capabilities, protect lives, and preserve property. We envision a future where our contributions lead to significantly reduced fire-related risks and improved safety for communities worldwide.</p>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h4>Contact Us:</h4>
+                    <p>Fire Service Department<br>123 Firefighter Lane, Cityville, ST 12345</p>
+                    <p><strong>Phone:</strong><br>(123) 456-7890</p>
+                    <p><strong>Email:</strong><br>info@fireservice.com</p>
+                </div>
+                <div class="quick-links">
+                    <h4>Quick Links:</h4>
+                    <ul>
+                        <li><a href="{{ url_for('run.home') }}">Home</a></li>
+                        <li><a href="{{ url_for('run.about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('run.service') }}">Services</a></li>
+                        <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+                        <li><a href="#">Fire Safety Tips</a></li>
+                        <li><a href="#">Emergency Resources</a></li>
+                        <li><a href="{{ url_for('run.contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>Follow us:</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="important-info">
+                    <h4>Important Information:</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Emergency? Dial 911</p>
+                <p>&copy; 2024 WHITE HORSE TECHNOLOGIES LIMITED. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
